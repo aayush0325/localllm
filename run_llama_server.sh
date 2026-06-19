@@ -27,6 +27,7 @@ llama-server \
     --model "${MODEL_PATH}" \
     --port "${PORT}" \
     --host "${HOST}" \
+    --ctx-size 262144 \
     --cache-type-k turbo4 \
     --cache-type-v turbo3 \
     --n-gpu-layers 999 \
@@ -34,4 +35,5 @@ llama-server \
     --reasoning on \
     --reasoning-format deepseek \
     --reasoning-budget -1 \
-    --parallel 1;
+    --parallel 1 \
+	--flash-attn on;
