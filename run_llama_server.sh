@@ -28,8 +28,8 @@ llama-server \
     --port "${PORT}" \
     --host "${HOST}" \
     --ctx-size 262144 \
-    --cache-type-k turbo3 \
-    --cache-type-v turbo3 \
+    --cache-type-k turbo2 \
+    --cache-type-v turbo2 \
     --n-gpu-layers 999 \
     --n-cpu-moe 41 \
     --reasoning on \
